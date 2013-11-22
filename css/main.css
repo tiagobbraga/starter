@@ -102,4 +102,9 @@ body {
     width: 460px; } }
 @media (max-width: 479px) {
   .center {
-    width: 300px; } }s
+    width: 300px; } }
+input.error {
+  border: 1px solid red; }
+
+label.error {
+  color: red; }

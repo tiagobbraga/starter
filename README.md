@@ -30,3 +30,8 @@ sass --watch sass/main.sass:css/main.css --style compressed
 [Dicas sobre Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-code)
 
 [Editor online Markdown](http://www.ctrlshift.net/project/markdowneditor/)
+
+## Documentação(Plugins)
+[JQuery Mask](http://www.igorescobar.com/blog/2012/03/13/mascaras-com-jquery-mask-plugin/)
+
+[JQuery Validator](http://jqueryvalidation.org/documentation/)

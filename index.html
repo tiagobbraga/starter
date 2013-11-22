@@ -51,8 +51,8 @@
                 </div>
             </header>
             <div id="main" role="main" class="main">
+                <h2>Media Crop</h2>
                 <div class="center">
-                    <h1>Pang</h1>
                     <div class="media-crop">
                         <div class="crop">
                             <img src="http://placekitten.com/200/300">
@@ -68,6 +68,31 @@
                             <img src="http://placekitten.com/200/300">
                         </div>
                     </div>
+                    <br>
+                    <h2>Form</h2>
+                    <form action="javascript:void(0);" id="contact">
+                        <fieldset>
+                            <label for="">Nome</label>
+                            <input type="text" name="name" id="name">
+                        </fieldset>
+                        <fieldset>
+                            <label for="">Telefone</label>
+                            <input type="text" name="phone" id="phone">
+                        </fieldset>
+                        <fieldset>
+                            <label for="">E-Mail</label>
+                            <input type="text" name="email" id="email">
+                        </fieldset>
+                        <fieldset>
+                            <label for="">Assunto</label>
+                            <input type="text" name="subject" id="subject">
+                        </fieldset>
+                        <fieldset>
+                            <label for="">Mensagem</label>
+                            <textarea name="" id="" cols="30" rows="10" name="message" id="message"></textarea>
+                        </fieldset>
+                        <input type="submit" value="Enviar">
+                    </form>
                 </div>
             </div>
             <footer>
@@ -76,9 +101,11 @@
                 </div>
             </footer>
         </div>
-        <script src="js/vendor/jquery-2.0.3.js"></script>
+        <script src="js/vendor/jquery-2.0.3.min.js"></script>
+        <script src="js/vendor/jquery.validate.min.js"></script>
+        <script src="js/vendor/jquery.mask.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/functions.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/grid.js"></script>
         <script>
             // analytics
