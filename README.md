@@ -28,3 +28,8 @@ ou
 ```
 sass --watch sass/main.sass:css/main.css --style compressed
 ```	
+
+Dicas
+=======
+[Dicas sobre Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-code)
+[Editor online Markdown](http://www.ctrlshift.net/project/markdowneditor/)
