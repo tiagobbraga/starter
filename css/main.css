@@ -87,3 +87,19 @@ body {
     height: 100%; }
   .media-crop img, .media-crop video, .media-crop iframe {
     display: none; }
+
+@media (min-width: 1250px) {
+  .center {
+    width: 1180px; } }
+@media all and (min-width: 1000px) and (max-width: 1249px) {
+  .center {
+    width: 940px; } }
+@media (min-width: 770px) and (max-width: 999px) {
+  .center {
+    width: 700px; } }
+@media (min-width: 480px) and (max-width: 769px) {
+  .center {
+    width: 460px; } }
+@media (max-width: 479px) {
+  .center {
+    width: 300px; } }s
