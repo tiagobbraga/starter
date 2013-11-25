@@ -1,5 +1,48 @@
+// Basic Structure
+fieldset
+	position: relative
+	padding: 5px 0
+	margin: 0
+	border: 0
+	outline: 0
+
+label
+	width: 30%
+	padding:
+		right: 5px
+	text:
+		align: right
+	font:
+		weight: bold
+
+label, input, textarea
+	display: inline-block
+
+input, textarea
+	width: 70%
+	padding: 0
+	padding: 5px
+	margin:
+		left: -4px
+
+input[type="submit"]
+	width: 10%	
+
+// Validade
 input.error
 	border: 1px solid red
 
 label.error
+	position: absolute
+	top: 13px
+	right: 0
+	display: block
+	width: inherit
 	color: red
+	text:
+		align: left
+	font:
+		weight: normal
+		size: 12px
+	padding: 
+		right: 5px
