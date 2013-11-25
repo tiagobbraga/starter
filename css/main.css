@@ -1,21 +1,167 @@
-/*
-Errno::ENOENT: No such file or directory - sass/main.sass
+@font-face {
+  font-family: "helvetica_neue_lt_std77BdCn";
+  src: url("../font/helveticaneueltstd-bdcn-webfont.eot");
+  src: url("../font/helveticaneueltstd-bdcn-webfont.eot?#iefix") format("embedded-opentype"), url("../font/helveticaneueltstd-bdcn-webfont.woff") format("woff"), url("../font/helveticaneueltstd-bdcn-webfont.ttf") format("truetype"), url("../font/helveticaneueltstd-bdcn-webfont.svg#helvetica_neue_lt_std77BdCn") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
 
-Backtrace:
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:360:in `read'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:360:in `update_stylesheet'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:283:in `block in watch'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - sass/main.sass"; }
+@font-face {
+  font-family: "helvetica_neue_lt_std45_light";
+  src: url("../font/helveticaneueltstd-lt-webfont.eot");
+  src: url("../font/helveticaneueltstd-lt-webfont.eot?#iefix") format("embedded-opentype"), url("../font/helveticaneueltstd-lt-webfont.woff") format("woff"), url("../font/helveticaneueltstd-lt-webfont.ttf") format("truetype"), url("../font/helveticaneueltstd-lt-webfont.svg#helvetica_neue_lt_std45_light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
+
+a:hover, a:active, a:focus {
+  outline: 0 none; }
+
+input:hover, input:active, input:focus {
+  outline: 0 none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:focus {
+    outline: 0; }
+
+.center {
+  -webkit-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+.off {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none; }
+
+.wr {
+  float: left;
+  width: 100%;
+  text-align: center; }
+
+header, .main, footer {
+  float: left;
+  width: 100%; }
+
+.center {
+  margin: 0 auto;
+  text-align: left;
+  width: 940px;
+  background: white; }
+
+::-moz-selection, ::selection {
+  background: #e32e21;
+  color: #f2f2f2; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  overflow-x: hidden; }
+
+.media-crop {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2 url(../img/loading.gif) center center no-repeat;
+  overflow: hidden; }
+  .media-crop.circle {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%; }
+  .media-crop.square {
+    width: 200px;
+    height: 200px; }
+  .media-crop .crop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .media-crop img, .media-crop video, .media-crop iframe {
+    display: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "helvetica_neue_lt_std77BdCn";
+  margin: 0 0 10px 0; }
+
+p, span, label, input, textarea, ul, ol {
+  font-family: "helvetica_neue_lt_std45_light";
+  font-size: 1em; }
+
+@media (min-width: 1250px) {
+  .center {
+    width: 1180px; } }
+@media all and (min-width: 1000px) and (max-width: 1249px) {
+  .center {
+    width: 940px; } }
+@media (min-width: 770px) and (max-width: 999px) {
+  .center {
+    width: 700px; } }
+@media (min-width: 480px) and (max-width: 769px) {
+  .center {
+    width: 460px; } }
+@media (max-width: 479px) {
+  .center {
+    width: 300px; } }
+fieldset {
+  position: relative;
+  padding: 5px 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  overflow: hidden; }
+
+label {
+  width: 30%;
+  position: relative;
+  top: 5px;
+  padding-right: 5px;
+  text-align: right;
+  font-weight: bold; }
+
+label, input, textarea {
+  float: left;
+  display: inline-block; }
+
+input, textarea {
+  width: 70%;
+  padding: 0;
+  padding: 5px; }
+
+input[type="submit"] {
+  float: left;
+  margin-left: 30%;
+  width: inherit; }
+
+input.error {
+  border: 1px solid red; }
+
+label.error {
+  position: absolute;
+  top: 13px;
+  right: 0;
+  display: block;
+  width: inherit;
+  color: red;
+  text-align: left;
+  font-weight: normal;
+  font-size: 12px;
+  padding-right: 5px; }
