@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "helvetica_neue_lt_std77BdCn";
+  src: url("../font/helveticaneueltstd-bdcn-webfont.eot");
+  src: url("../font/helveticaneueltstd-bdcn-webfont.eot?#iefix") format("embedded-opentype"), url("../font/helveticaneueltstd-bdcn-webfont.woff") format("woff"), url("../font/helveticaneueltstd-bdcn-webfont.ttf") format("truetype"), url("../font/helveticaneueltstd-bdcn-webfont.svg#helvetica_neue_lt_std77BdCn") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: "helvetica_neue_lt_std45_light";
+  src: url("../font/helveticaneueltstd-lt-webfont.eot");
+  src: url("../font/helveticaneueltstd-lt-webfont.eot?#iefix") format("embedded-opentype"), url("../font/helveticaneueltstd-lt-webfont.woff") format("woff"), url("../font/helveticaneueltstd-lt-webfont.ttf") format("truetype"), url("../font/helveticaneueltstd-lt-webfont.svg#helvetica_neue_lt_std45_light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
+
 a:hover, a:active, a:focus {
   outline: 0 none; }
 
@@ -54,15 +70,7 @@ body {
   width: 100%;
   height: 100%;
   background: #f2f2f2;
-  overflow-x: hidden;
-  @font-face {
-    font-family: "Arial";
-      font-family-src: url(font-path("Arial.eot"));
-      font-family-src: url(font-path("Arial.eot?#iefix")) format("embedded-opentype"), url(font-path("Arial.woff")) format("woff"), url(font-path("Arial.ttf")) format("truetype"), url(font-path("Arial.svg#Arial")) format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal; }
- }
+  overflow-x: hidden; }
 
 .media-crop {
   display: block;
@@ -90,6 +98,14 @@ body {
   .media-crop img, .media-crop video, .media-crop iframe {
     display: none; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "helvetica_neue_lt_std77BdCn";
+  margin: 0 0 10px 0; }
+
+p, span, label, input, textarea, ul, ol {
+  font-family: "helvetica_neue_lt_std45_light";
+  font-size: 1em; }
+
 @media (min-width: 1250px) {
   .center {
     width: 1180px; } }
@@ -110,25 +126,30 @@ fieldset {
   padding: 5px 0;
   margin: 0;
   border: 0;
-  outline: 0; }
+  outline: 0;
+  overflow: hidden; }
 
 label {
   width: 30%;
+  position: relative;
+  top: 5px;
   padding-right: 5px;
   text-align: right;
   font-weight: bold; }
 
 label, input, textarea {
+  float: left;
   display: inline-block; }
 
 input, textarea {
   width: 70%;
   padding: 0;
-  padding: 5px;
-  margin-left: -4px; }
+  padding: 5px; }
 
 input[type="submit"] {
-  width: 10%; }
+  float: left;
+  margin-left: 30%;
+  width: inherit; }
 
 input.error {
   border: 1px solid red; }

@@ -1,5 +1,8 @@
 @import "mixins.sass"
 
+@include declare-font-face("helvetica_neue_lt_std77BdCn", "../font/helveticaneueltstd-bdcn-webfont")
+@include declare-font-face("helvetica_neue_lt_std45_light", "../font/helveticaneueltstd-lt-webfont")
+
 //basic config
 a
   &:hover, &:active, &:focus
@@ -61,7 +64,6 @@ body
   height: 100%
   background: #f2f2f2
   overflow-x: hidden
-  @include declare-font-face('Arial', 'Arial')
 
 //image-crop
 .media-crop
@@ -89,6 +91,18 @@ body
     height: 100%
   img, video, iframe
     display: none
+
+// Titles
+h1, h2, h3, h4, h5, h6
+  font:
+    family: "helvetica_neue_lt_std77BdCn"
+  margin: 0 0 10px 0
+
+// Texts
+p, span, label, input, textarea, ul, ol 
+  font:
+    family: "helvetica_neue_lt_std45_light"
+    size: 1em
 
 @import "main-responsive.sass"
 @import "form.sass"

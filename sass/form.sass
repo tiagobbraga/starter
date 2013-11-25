@@ -5,9 +5,12 @@ fieldset
 	margin: 0
 	border: 0
 	outline: 0
+	overflow: hidden
 
 label
 	width: 30%
+	position: relative
+	top: 5px
 	padding:
 		right: 5px
 	text:
@@ -16,17 +19,18 @@ label
 		weight: bold
 
 label, input, textarea
+	float: left
 	display: inline-block
 
 input, textarea
 	width: 70%
 	padding: 0
 	padding: 5px
-	margin:
-		left: -4px
 
 input[type="submit"]
-	width: 10%	
+	float: left
+	margin-left: 30%
+	width: inherit
 
 // Validade
 input.error
